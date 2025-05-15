@@ -1,34 +1,43 @@
-# BANCO DE DADOS DE VENDAS INTELIGENTE 
-Projeto usando SQL.
+# 🛠️ Sistema de Gerenciamento de Loja de Ferragens – Projeto em PostgreSQL
 
+Este repositório contém o desenvolvimento de um sistema de banco de dados relacional voltado à gestão de uma **loja de ferragens**, utilizando **PostgreSQL** como SGBD.
 
-O objetivo do meu projeto é criar um sistema de gerenciamento de vendas usando PostgreSQL, com uma modelagem de dados bem estruturada, quero que esse banco seja bem estruturado, curioso e bem elaborado.
+## 📌 Objetivo
 
+Criar um sistema capaz de:
+- Gerenciar compras de mercadorias feitas por fornecedores.
+- Controlar vendas realizadas para clientes.
+- Acompanhar o estoque da loja.
+- Gerar relatórios de desempenho, como lucros/prejuízos e produtos mais/menos vendidos.
 
-Nesse projeto, será permitido: 
+## 🧱 Estrutura do Banco de Dados
 
+O modelo contempla as seguintes entidades:
 
--> Cadastrar clientes, vendedores e produtos;
--> Registrar vendas e itens vendidos;
--> Acompanhar histórico de preços dos produtos;
--> Gerenciar devoluções de produtos.
+- **Loja**
+- **Fornecedor**
+- **Cliente**
+- **Vendedor**
+- **Mercadorias_Compradas**
+- **Mercadoria_Vendida**
+- **Venda**
+- **Loja_Fornecedor** (tabela de relacionamento N:M)
 
-Comecei criando as tabelas do nosso banco de dados. 
+Além disso, foram definidos relacionamentos com cardinalidades 1:1, 1:N e N:M, e chaves estrangeiras garantindo a integridade referencial.
 
-ESSAS SÃO AS CARATERISTICAS DE CADA TABELA: 
+## 🔄 Funcionalidades Simuladas
 
+- Inserção de dados de fornecedores, clientes, vendedores e lojas.
+- Simulação de compras de mercadorias por lojas.
+- Simulação de vendas com atualização de estoque.
+- Exclusão de mercadorias esgotadas do banco.
+- Atualização de atributos.
+- Criação de views para relatórios automatizados.
 
+## 📊 Relatórios Gerados
 
-
-![image](https://github.com/user-attachments/assets/ef8ecea6-7f7b-4558-8e48-6b5bfe9b0ac6)
-SERIAL (primary key), REFERENCES as chaves estrangeiras, NOT NULL...
-
-
-
-
-
-Usando esse mesmo prompt para as outras tabela do nosso projeto, conseguimos inserir todas para recebermos os dados. 
-
-
-
-*em construção
+- **Mercadorias mais vendidas**
+- **Mercadorias menos vendidas**
+- **Lucro ou prejuízo por mercadoria**
+- **Estoque atual (com nome em ordem crescente)**
+- **Mercadorias esgotadas que foram vendidas**
