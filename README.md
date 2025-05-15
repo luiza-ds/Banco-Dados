@@ -40,4 +40,3 @@ Além disso, foram definidos relacionamentos com cardinalidades 1:1, 1:N e N:M, 
 - **Mercadorias menos vendidas**
 - **Lucro ou prejuízo por mercadoria**
 - **Estoque atual (com nome em ordem crescente)**
-- **Mercadorias esgotadas que foram vendidas**
