@@ -40,3 +40,15 @@ Além disso, foram definidos relacionamentos com cardinalidades 1:1, 1:N e N:M, 
 - **Mercadorias menos vendidas**
 - **Lucro ou prejuízo por mercadoria**
 - **Estoque atual (com nome em ordem crescente)**
+
+## 🧭 Modelo Lógico
+
+Abaixo está o modelo lógico que representa as entidades, atributos e relacionamentos do sistema:
+
+![modelo logico ](https://github.com/user-attachments/assets/02bdc67f-4a46-4631-8cb6-0820aaa0ad4d)
+
+## 🔗 DER
+
+![DER](https://github.com/user-attachments/assets/f7e67149-4dec-420e-a80c-24fd238e1230)
+
+
